@@ -62,7 +62,7 @@ export default function AboutPage() {
           ].map((item, index) => (
             <Card key={index} className="bg-gray-800/50 border-gray-700">
               <CardContent className="p-6 text-center">
-                <item.icon className="h-12 w-12 text-[#3B82F6] mx-auto mb-4" />
+                <item.icon className="h-12 w-12 text-[#F59E0B] mx-auto mb-4" />
                 <div className="text-3xl font-bold mb-2 text-white">{item.stat}</div>
                 <div className="text-gray-400">{item.label}</div>
               </CardContent>

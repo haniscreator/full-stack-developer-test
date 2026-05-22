@@ -19,8 +19,18 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href="/" className="text-white text-xl font-bold">
-              BlockEstate
+            <Link href="/" className="flex items-center space-x-2 text-white hover:opacity-95 transition-opacity">
+              <svg className="h-7 w-7 text-[#F59E0B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="2" ry="2" />
+                <path d="M7 22V14H17V22" />
+                <path d="M9 6h2" />
+                <path d="M13 6h2" />
+                <path d="M9 10h2" />
+                <path d="M13 10h2" />
+              </svg>
+              <span className="text-xl font-bold tracking-tight text-white">
+                Block<span className="text-[#F59E0B]">Estate</span>
+              </span>
             </Link>
           </div>
           

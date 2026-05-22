@@ -32,7 +32,7 @@ export function PropertyDetail({ id }: PropertyDetailProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <button 
           onClick={() => router.back()}
-          className="inline-flex items-center text-[#3B82F6] hover:text-[#2563EB] mb-6"
+          className="inline-flex items-center text-[#F59E0B] hover:text-[#D97706] mb-6"
         >
           <ChevronLeft className="h-5 w-5 mr-1" />
           Back to Properties
@@ -55,7 +55,7 @@ export function PropertyDetail({ id }: PropertyDetailProps) {
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-800/50 p-4 rounded-lg">
                 <h3 className="text-lg font-semibold text-gray-300">Price</h3>
-                <p className="text-2xl font-bold text-[#3B82F6]">${property.price.toLocaleString()}</p>
+                <p className="text-2xl font-bold text-[#F59E0B]">${property.price.toLocaleString()}</p>
               </div>
               <div className="bg-gray-800/50 p-4 rounded-lg">
                 <h3 className="text-lg font-semibold text-gray-300">Expected ROI</h3>
@@ -70,7 +70,7 @@ export function PropertyDetail({ id }: PropertyDetailProps) {
               cryptoPrice={2000}
             />
 
-            <Button className="w-full mt-6 bg-[#3B82F6] hover:bg-[#2563EB] text-white">
+            <Button className="w-full mt-6 bg-[#F59E0B] hover:bg-[#D97706] text-white font-semibold">
               Invest Now
             </Button>
           </CardContent>

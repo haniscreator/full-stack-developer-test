@@ -60,7 +60,7 @@ export function FractionalOwnershipSlider({
         </div>
         <div className="mt-6 bg-gray-700 h-4 rounded-full overflow-hidden">
           <div
-            className="bg-gradient-to-r from-[#3B82F6] to-[#10B981] h-full rounded-full transition-all duration-300 ease-in-out"
+            className="bg-gradient-to-r from-[#F59E0B] to-[#10B981] h-full rounded-full transition-all duration-300 ease-in-out"
             style={{ width: `${ownershipPercentage}%` }}
           ></div>
         </div>

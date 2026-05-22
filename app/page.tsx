@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { HeroCarousel } from '@/components/hero-carousel'
 import { properties } from '@/lib/properties-data'
+import { Interactive3DCard } from '@/components/interactive-3d-card'
 
 export default function Page() {
   return (
@@ -20,7 +21,7 @@ export default function Page() {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 <span className="block">Invest in Real Estate</span>
-                <span className="block text-[#3B82F6]">with Blockchain</span>
+                <span className="block text-[#F59E0B]">with Blockchain</span>
               </h1>
               <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 BlockEstate revolutionizes property investment through fractional ownership. 
@@ -28,7 +29,7 @@ export default function Page() {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Button size="lg" className="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white">
+                  <Button size="lg" className="w-full bg-[#F59E0B] hover:bg-[#D97706] text-white font-semibold">
                     Start Investing
                     <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -50,28 +51,30 @@ export default function Page() {
           <h2 className="text-3xl font-extrabold tracking-tight text-white">Featured Properties</h2>
           <div className="mt-6 grid gap-6 lg:grid-cols-3">
             {properties.map((property) => (
-              <Card key={property.id} className="overflow-hidden bg-gray-700/50 border-gray-600">
-                <Image
-                  src={property.image}
-                  alt={property.title}
-                  width={400}
-                  height={200}
-                  className="w-full h-48 object-cover"
-                />
-                <CardContent className="p-4">
-                  <h3 className="text-lg font-semibold text-white">{property.title}</h3>
-                  <p className="text-sm text-gray-300 mt-1">{property.location}</p>
-                  <div className="flex justify-between items-center mt-4">
-                    <span className="text-[#3B82F6] font-bold">${property.price.toLocaleString()}</span>
-                    <span className="text-[#10B981]">Expected ROI: {property.roi}%</span>
-                  </div>
-                  <Link href={`/property/${property.id}`}>
-                    <Button className="w-full mt-4 bg-[#3B82F6] hover:bg-[#2563EB] text-white">
-                      View Details
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
+              <Interactive3DCard key={property.id}>
+                <Card className="overflow-hidden bg-gray-700/50 border-gray-600 h-full">
+                  <Image
+                    src={property.image}
+                    alt={property.title}
+                    width={400}
+                    height={200}
+                    className="w-full h-48 object-cover"
+                  />
+                  <CardContent className="p-4">
+                    <h3 className="text-lg font-semibold text-white">{property.title}</h3>
+                    <p className="text-sm text-gray-300 mt-1">{property.location}</p>
+                    <div className="flex justify-between items-center mt-4">
+                      <span className="text-[#F59E0B] font-bold">${property.price.toLocaleString()}</span>
+                      <span className="text-[#10B981]">Expected ROI: {property.roi}%</span>
+                    </div>
+                    <Link href={`/property/${property.id}`}>
+                      <Button className="w-full mt-4 bg-[#F59E0B] hover:bg-[#D97706] text-white font-semibold">
+                        View Details
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              </Interactive3DCard>
             ))}
           </div>
         </div>
@@ -90,7 +93,7 @@ export default function Page() {
                 { icon: Building2, title: "Grow Your Portfolio", description: "Diversify your investments across multiple properties and locations." },
               ].map((step, index) => (
                 <div key={index} className="text-center">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#3B82F6] text-white mx-auto">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-[#F59E0B] text-white mx-auto">
                     <step.icon className="h-6 w-6" />
                   </div>
                   <h3 className="mt-4 text-lg font-medium text-white">{step.title}</h3>

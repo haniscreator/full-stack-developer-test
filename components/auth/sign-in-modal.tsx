@@ -56,7 +56,7 @@ export function SignInModal({ isOpen, onClose }: SignInModalProps) {
                 id="email"
                 placeholder="john@example.com"
                 type="email"
-                className="bg-white/5 border-gray-700 text-white placeholder:text-gray-500 focus-visible:ring-blue-500"
+                className="bg-white/5 border-gray-700 text-white placeholder:text-gray-500 focus-visible:ring-amber-500"
               />
             </div>
             <div className="space-y-2">
@@ -64,21 +64,21 @@ export function SignInModal({ isOpen, onClose }: SignInModalProps) {
               <Input
                 id="password"
                 type="password"
-                className="bg-white/5 border-gray-700 text-white placeholder:text-gray-500 focus-visible:ring-blue-500"
+                className="bg-white/5 border-gray-700 text-white placeholder:text-gray-500 focus-visible:ring-amber-500"
               />
             </div>
-            <Button className="w-full bg-[#3B82F6] hover:bg-[#2563EB] text-white">
+            <Button className="w-full bg-[#F59E0B] hover:bg-[#D97706] text-white font-semibold">
               Sign In
             </Button>
           </div>
 
           <div className="text-center text-sm">
-            <a href="#" className="text-[#3B82F6] hover:text-[#2563EB]">Forgot password?</a>
+            <a href="#" className="text-[#F59E0B] hover:text-[#D97706]">Forgot password?</a>
           </div>
 
           <div className="text-center text-sm text-gray-400">
             Don&apos;t have an account?{' '}
-            <a href="#" className="text-[#3B82F6] hover:text-[#2563EB]">Sign up</a>
+            <a href="#" className="text-[#F59E0B] hover:text-[#D97706]">Sign up</a>
           </div>
         </div>
       </DialogContent>

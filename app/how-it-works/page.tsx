@@ -19,7 +19,7 @@ export default function HowItWorksPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <Card className="bg-gray-800/50 border-gray-700">
               <CardContent className="p-6">
-                <Shield className="h-12 w-12 text-[#3B82F6] mb-4" />
+                <Shield className="h-12 w-12 text-[#F59E0B] mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">LLC Ownership Structure</h3>
                 <p className="text-gray-400">
                   Each property is owned by a dedicated LLC, which is then subdivided into membership interests. 
@@ -29,7 +29,7 @@ export default function HowItWorksPage() {
             </Card>
             <Card className="bg-gray-800/50 border-gray-700">
               <CardContent className="p-6">
-                <FileCheck className="h-12 w-12 text-[#3B82F6] mb-4" />
+                <FileCheck className="h-12 w-12 text-[#F59E0B] mb-4" />
                 <h3 className="text-xl font-semibold mb-2 text-white">Regulatory Compliance</h3>
                 <p className="text-gray-400">
                   Our structure complies with SEC regulations as a direct property interest rather than a security, 
@@ -63,7 +63,7 @@ export default function HowItWorksPage() {
             ].map((step, index) => (
               <Card key={index} className="bg-gray-800/50 border-gray-700">
                 <CardContent className="p-6">
-                  <step.icon className="h-12 w-12 text-[#3B82F6] mb-4" />
+                  <step.icon className="h-12 w-12 text-[#F59E0B] mb-4" />
                   <h3 className="text-xl font-semibold mb-2 text-white">{step.title}</h3>
                   <p className="text-gray-400">{step.description}</p>
                 </CardContent>
@@ -81,15 +81,15 @@ export default function HowItWorksPage() {
                 <h3 className="text-xl font-semibold mb-4 text-white">For Investors</h3>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-center">
-                    <Coins className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Coins className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Low minimum investment threshold
                   </li>
                   <li className="flex items-center">
-                    <Shield className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Shield className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Direct property ownership rights
                   </li>
                   <li className="flex items-center">
-                    <Building2 className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Building2 className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Access to premium real estate
                   </li>
                 </ul>
@@ -100,15 +100,15 @@ export default function HowItWorksPage() {
                 <h3 className="text-xl font-semibold mb-4 text-white">Platform Features</h3>
                 <ul className="space-y-3 text-gray-400">
                   <li className="flex items-center">
-                    <Shield className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Shield className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Secure blockchain records
                   </li>
                   <li className="flex items-center">
-                    <Users className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Users className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Automated distribution of rental income
                   </li>
                   <li className="flex items-center">
-                    <Building2 className="h-5 w-5 text-[#3B82F6] mr-2" />
+                    <Building2 className="h-5 w-5 text-[#F59E0B] mr-2" />
                     Professional property management
                   </li>
                 </ul>
