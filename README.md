@@ -67,7 +67,7 @@ A premium, blockchain-integrated real estate investment platform that enables fr
    ```env
    PORT=4000
    NODE_ENV=development
-   MONGO_URI=mongodb+srv://ecommerce_user:th1ZP8xCRLDG62Z3@ecomcluster.6e1wd0e.mongodb.net/real_estate_test?retryWrites=true&w=majority
+   MONGO_URI=mongodb+srv://ecommerce_user:qqqqqqqqqqqqqq@ecomcluster.6e1wd0e.mongodb.net/real_estate_test?retryWrites=true&w=majority
    JWT_SECRET=my_random_demo_secret_007
    STRIPE_SECRET_KEY=sk_test_your_stripe_key_here
    ```
